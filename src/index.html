@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <title>Gallery</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -12,14 +12,25 @@
     />
   </head>
   <body>
-    <form class="search-form" id="search-form">
-      <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
-      <button type="submit">Search</button>
-    </form>
-    <div class="gallery">
-      <!-- Карточки изображений -->
+    <div class="wrapper-form">
+      <form class="search-form" id="search-form">
+        <input
+          class="search-form-input"
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+        <button class="search-form-btn" type="submit"></button>
+      </form>
     </div>
-    <button type="button" class="load-more">Load more</button>
+
+    <div class="container">
+      <div class="gallery">
+        <!-- Карточки изображений -->
+      </div>
+      <button class="load-more is-hidden" type="button">Load more</button>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
